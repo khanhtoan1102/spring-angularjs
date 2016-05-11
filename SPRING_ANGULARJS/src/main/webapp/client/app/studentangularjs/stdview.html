@@ -1,0 +1,86 @@
+<section id="dashboard-view" class="mainbar">
+	<section class="matter">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="widget wblue">
+						<div data-cc-widget-header title="Student Manager"
+							allow-collapse="true"></div>
+						<div class="widget-content text-center text-info">
+
+							<form name="form" novalidate>
+								Name: <input type="text" ng-model="name" name="name" required="" />
+								<span ng-show="form.$submitted || form.name.$touched"> <span
+									ng-show="form.name.$error.required"> Tell us your name </span>
+								</span> <br>Year Of Birth: <input type="text" ng-model="yob"
+									name="yob" integer /> <span ng-show="form.yob.$error.integer">please
+									enter number</span> <br />Phone number: <input type="text"
+									ng-model="phone" name="phone" integer /> <span
+									ng-show="form.phone.$error.integer">please enter number</span>
+
+								<br />Email: <input type="email" ng-model="myEmail"
+									overwrite-email name="overwrittenEmail" required="" /> <span
+									ng-show="form.$submitted || form.overwrittenEmail.$touched">
+									<span ng-show="form.overwrittenEmail.$error.required">
+										Enter your email! </span>
+								</span> <span ng-show="form.overwrittenEmail.$error.email">This
+									email format is invalid!</span> <br />University: <input type="text"
+									ng-model="university" name="university" required="" /> <span
+									ng-show="form.$submitted || form.university.$touched"> <span
+									ng-show="form.university.$error.required"> Tell us your
+										university. </span>
+								</span>
+							</form>
+							
+							
+							<div class="stdmain">
+								<form name="student" action="" method="" novalidate>
+									<div class="form-group">
+										<label>Name</label> <input class="form-control" type="text"
+											name="name" ng-model="student.name" ng-minlength="1"
+											ng-maxlength="50" required />
+										<span ng-show="student.$submitted || student.name.$touched">
+											<span ng-show="student.name.$error.required">Please Enter the name</span>
+										</span>
+									</div>
+									<div class="form-group">
+										<label>Sex</label> <input class="form-control" type="text"
+											name="sex" ng-model="student.sex" required />
+										<span ng-show="student.sex.$touched || student.$submiited">
+											<span ng-show="student.sex.$error.required">Please enter the Gender</span>
+										</span>
+									</div>
+									<div class="form-group">
+										<label>Date Of Birth</label> <input class="form-control"
+											type="date" name="dateOfBirth" ng-model="student.dateOfBirth"
+											required />
+										<span ng-show="student.dateOfBirth.$touched || student.$submiited">
+											<span ng-show="student.dateOfBirth.$error.required">Please enter the Gender</span>
+										</span>
+									</div>
+									<div class="form-group">
+										<label>Address</label> <input class="form-control" type="text"
+											name="address" ng-model="student.address" required />
+										<span ng-show="student.address.$touched || student.$submiited">
+											<span ng-show="student.address.$error.required">Please enter the Gender</span>
+										</span>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Submit" class="btn btn-primary"/><input type="reset" value="Reset" class="btn btn-primary"/>
+									</div>
+								</form>
+							</div>
+
+
+						</div>
+						<div class="widget-foot">
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+

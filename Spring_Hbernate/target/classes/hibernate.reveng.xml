@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-schema="QLBH_DB" match-name="ADVERTISE"/>
+  <table-filter match-schema="QLBH_DB" match-name="BILL"/>
+  <table-filter match-schema="QLBH_DB" match-name="BILLDETAIL"/>
+  <table-filter match-schema="QLBH_DB" match-name="COMPANY"/>
+  <table-filter match-schema="QLBH_DB" match-name="CONTACT"/>
+  <table-filter match-schema="QLBH_DB" match-name="CUSTOMER"/>
+  <table-filter match-schema="QLBH_DB" match-name="GROUPPRODUCT"/>
+  <table-filter match-schema="QLBH_DB" match-name="MENU"/>
+  <table-filter match-schema="QLBH_DB" match-name="PRODUCT"/>
+  <table-filter match-schema="QLBH_DB" match-name="SUPPORT"/>
+</hibernate-reverse-engineering>

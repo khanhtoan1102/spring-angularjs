@@ -1,0 +1,48 @@
+<section id="dashboard-view" class="mainbar">
+	<section class="matter">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="widget wblue">
+						<div data-cc-widget-header title="Student Manager"
+							allow-collapse="true"></div>
+						<div class="widget-content text-center text-info">
+							<button ng-click="add(student)" style="float:left;">Add</button>
+							<table style="border: 1px solid blue; width: 100%; height: auto; text-align: center;">
+								<tr>
+									<td>Id</td>
+									<td>Name</td>
+									<td>Sex</td>
+									<td>Date Of Birth</td>
+									<td>Address</td>
+									<td>School</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr ng-repeat="std in data">
+									<td>{{std.id}}</td>
+									<td>{{std.name}}</td>
+									<td>{{std.sex}}</td>
+									<td>{{std.dateOfBirth}}</td>
+									<td>{{std.address}}</td>
+									<td>{{std.school.name}}</td>
+									<td><button ng-click="edit(student)">Edit</button></td>
+									<td><button ng-click="delete(student)">Delete</button></td>
+								</tr>
+							</table>
+							<div style="border: 1px solid red">{{data}}</div>
+							<div style="border: 1px solid blue; height: 30px;">{{status}}</div>
+
+
+						</div>
+						<div class="widget-foot">
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+
